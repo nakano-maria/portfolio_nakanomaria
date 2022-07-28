@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio お問い合わせページ</title>
+  <!-- slick読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="header-wrap">
+      <h1 class="header_logo"><img src="img/logo.png" alt="ヘッダーロゴ"></h1>
+
+      <!-- PCメニュー -->
+      <nav class="pc_nav">
+        <ul>
+          <li>
+            <a href="../portfolio_nakano/index.html">私について</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/index.html">コンセプト</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/index.html">できること</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/works.html">制作実績</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/contact.html">お問い合わせ</a>
+          </li>
+        </ul>
+
+        <ul class="nav_icon">
+          <li><a href="https://www.instagram.com/nmk_0911/?hl=ja"><img src="img/insta_icon.png"></a></li>
+          <li><a href="../portfolio_nakano/contact.html"><img src="img/mail_icon.png"></a></li>
+        </ul>
+
+      </nav>
+
+      <div class="btn"><span></span></div>
+
+      <!-- SPハンバーガーメニュー -->
+      <nav class="sp_nav">
+        <ul>
+          <li>
+            <a href="#about">私について</a>
+          </li>
+
+          <li>
+            <a href="#concept">コンセプト</a>
+          </li>
+
+          <li>
+            <a href="#skill">できること</a>
+          </li>
+
+          <li>
+            <a href="#works">制作実績</a>
+          </li>
+
+          <li>
+            <a href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <body>
+    <div class="contactform">
+      <h2 class="contactform_title"><img src="img/contact.png" alt="お問い合わせ"></h2>
+      <h3>ご相談・ご質問ございましたらお気軽にお問合せください。</h3>
+
+
+      <div class="box_con04">
+        <div class="columns">
+          <div class="column is-half">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+              <!-- Replace with your StaticForms accessKey -->
+              <input type="hidden" name="accessKey" value="5f65117a-a837-40ff-bdc2-e37a5914f7ca">
+              <input type="hidden" name="subject" value="Test from jsfiddle">
+              <!-- <div class="box_con04"> -->
+              <ul class="formTable">
+                <li>
+                  <p class="title"><em>お名前<span>必須</span></em></p>
+                  <div class="box_det"><input size="20" type="text" class="wide" name="name" value="（例）山田太郎" /></div>
+                </li>
+
+
+
+                <li>
+                  <p class="title"><em>Email<span>必須</span></em></p>
+                  <div class="box_det"><input size="30" type="text" class="wide" name="Email"
+                      value="（例）cintact@xxx.co.jp "></div>
+                </li>
+
+
+                <li>
+                  <p class="title"><em>タイトル</em></p>
+                  <div class="box_det"><input size="20" type="text" class="wide" name="subject" value="（例）お問い合わせ" />
+                  </div>
+                </li>
+
+
+                <li>
+                  <p class="title"><em>内容</em></p>
+                  <div class="box_det"><textarea name="message" cols="50" rows="5"></textarea></div>
+                </li>
+              </ul>
+
+              <!-- <input type="text" name="replyTo" value="myreplytoemail@example.com"> -->
+              <input type="hidden" name="replyTo" value="@">
+              <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+
+              <button class="submit_btn" type="Submit" value="Submit">送信する</button>
+              <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_wrap">
+        <p>©2022 MARIA NAKANO</p>
+      </div>
+
+
+
+
+  </body>
+
+
+
+
+
+
+  <script>
+    // find elements
+    $("#staticform").submit(function (event) {
+      event.preventDefault();
+      $.ajax({
+        url: 'https://api.staticforms.xyz/submit', // url where to submit the request
+        type: "POST", // type of action POST || GET
+        dataType: 'json', // data type
+        data: $("#staticform").serialize(), // post data || get data
+        success: function (result) {
+          // you can see the result from the console
+          // tab of the developer tools
+          alert(JSON.parse(result));
+        },
+        error: function (xhr, resp, text) {
+          alert(xhr, resp, text);
+        }
+      })
+    });
+
+
+    $(function () {
+      $('.btn,sp_nav a ').click(function () {
+        $('.sp_nav').fadeToggle();
+        $('.btn').toggleClass('open');
+      });
+    });
+
+  </script>
