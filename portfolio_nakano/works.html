@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制作実績</title>
+
+  <!-- slick読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="header-wrap">
+      <h1 class="header_logo"><a href="../portfolio_nakano/index.html"><img src="img/logo.png" alt="ヘッダーロゴ"></a></h1>
+
+      <!-- PCメニュー -->
+      <nav class="pc_nav">
+        <ul>
+          <li>
+            <a href="../portfolio_nakano/index.html/#about">私について</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/index.html/#concept">コンセプト</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/index.html/#skill">できること</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/works.html">制作実績</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/contact.html">お問い合わせ</a>
+          </li>
+          <li><a href="https://www.instagram.com/nmk_0911/?hl=ja"><img src="img/insta_icon.png"></a></li>
+        </ul>
+      </nav>
+
+      <div class="btn"><span></span></div>
+
+      <!-- SPハンバーガーメニュー -->
+      <nav class="sp_nav">
+        <ul>
+          <li>
+            <a href="../portfolio_nakano/index.html/#about">私について</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/index.html/#concept">コンセプト</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/index.html/#skill">できること</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/works.html">制作実績</a>
+          </li>
+
+          <li>
+            <a href="../portfolio_nakano/contact.html">お問い合わせ</a>
+          </li>
+          <li><a href="https://www.instagram.com/nmk_0911/?hl=ja"><img src="img/insta_icon.png"></a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="works_wrap">
+    <h2><img class="works_title" src="img/works_title.png"></h2>
+    <div class="works_list">
+      <ul>
+        <li><a href="#"><img src="img/mock_salonLP.png"></a>
+          <p>LIFE hair design</p>
+        </li>
+
+        <li><a href="#"><img src="img/mock_banner2.png"></a>
+          <p>Webサイトバナー</p>
+        </li>
+
+        <li><a href="#"><img src="img/mock_cafesite.png"></a>
+          <p>DESIGN CAFE</p>
+        </li>
+
+        <li><a href="#"><img src="img/mock_banner3.png"></a>
+          <p>広告バナー</p>
+        </li>
+
+        <li><a href="#"><img src="img/mock_outdoor.png"></a>
+          <p>キャンプ場イベントバナー</p>
+        </li>
+
+        <li><a href="#"><img src="img/mock_banner1.png"></a>
+          <p>化粧品バナー</p>
+        </li>
+
+        <li><a href="#"><img src="img/mock_Peoplegood.png"></a>
+          <p>Peoplegood様Webサイト</p>
+        </li>
+
+        <li><a href="#"><img src="img/mock_banner1.png"></a>
+          <p>化粧品バナー</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- TOPボタン -->
+  <div class="top_button">
+    <a href="#"><img src="img/TOP_btn.png"></a>
+  </div>
+
+
+  <!-- お問合わせ -->
+  <section id="contact">
+    <div class="contact_wrap">
+
+      <h2><img class="contact_title" src="img/contact.png"></h2>
+      <p>ご相談・ご質問ございましたら<br>お気軽にお問い合わせください。</p>
+      <div class="contact_btn">
+        <a href="../portfolio_nakano/contact.html">お問い合わせはこちら</a>
+      </div>
+      <div class="insta_icon"><a href="https://www.instagram.com/nmk_0911/?hl=ja"><img src="img/insta_icon2.png"></a>
+      </div>
+      <div class="copyright">
+        <p>©2022 MARIA NAKANO</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+
+    $(function () {
+      $('.btn,sp_nav a ').click(function () {
+        $('.sp_nav').fadeToggle();
+        $('.btn').toggleClass('open');
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
