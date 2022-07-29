@@ -66,7 +66,7 @@ body {
 }
 
 .header_logo {
-  max-width: 100%;
+  /* max-width: 100%; */
   width: 15%;
   margin-top: 22px;
   margin-left: 15px;
@@ -140,12 +140,13 @@ body {
   display: flex;
   margin: auto;
   max-width: 1237px;
-  max-height: 759px;
+  /* max-height: 759px; */
   /* max-width: 1234px; */
 }
 
 .about_title {
-  width: 245px;
+  /* width: 245px; */
+  width: 45%;
 }
 
 .about_right {
@@ -176,13 +177,13 @@ body {
   display: flex;
   max-width: 1100px;
   max-height: 585px;
-  margin: 65px auto 300px;
+  margin: 100px auto 300px;
 }
 
 
 .concept_wrap img {
   width: 58%;
-  height: 90%;
+  /* height: 90%; */
 }
 
 .concept_left {
@@ -242,8 +243,8 @@ body {
 
 
 .skill_list img {
-  /* width: 150px; */
   width: 30%;
+  height: 30%;
 }
 
 .skill_list h4 {
@@ -458,7 +459,7 @@ body {
 
 .images {
   display: block;
-  width: 1092px;
+  width: 80%;
   /*↑可変にする */
   margin: 0 auto 29px;
 }
@@ -496,6 +497,7 @@ body {
   width: 57%;
 }
 
+/* 一覧へ戻るボタン */
 .btn_back {
   display: block;
   text-align: center;
@@ -837,20 +839,23 @@ body {
   }
 
   .concept_left h3 {
-    font-size: 25px;
+    font-size: 4.2vw;
     line-height: 1.9;
+  }
+
+  .concept_left h2 {
+    padding-bottom: 15px;
   }
 
   .concept_left p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.9;
   }
 
-  .concept_wrap img {
+  .concept_wrap>img {
     position: absolute;
     top: 0px;
-    right: 30px;
-    width: auto;
+    left: 250px;
     z-index: -1;
   }
 
@@ -866,15 +871,11 @@ body {
   }
 
   .codeing_text p {
-    font-size: 15px;
-  }
-
-  .skill_list img {
-    width: 150px;
+    font-size: 4.13vw;
   }
 
   .skill_list h4 {
-    font-size: 18px;
+    font-size: 4.5vw;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -1024,7 +1025,8 @@ body {
 
   /* お問合せボタン */
   .contact_btn {
-    width: 200px;
+    /* width: 200px; */
+    width: 30%;
     font-size: 18px;
     padding: 0.8em 1em;
   }
@@ -1048,8 +1050,13 @@ body {
     padding-bottom: 60px;
   }
 
+  .works_wrap h2 {
+    width: 180px;
+  }
+
   .works_list ul {
     padding: 0 20px 79px 20px;
+    margin-top: 20px;
   }
 
   .works_list li {
@@ -1102,4 +1109,61 @@ body {
 /* TOPへ戻るボタン */
 .top_button {
   width: 55px;
+}
+
+
+/* designcafe.html */
+.designcafe_wrap h2 {
+  width: 130px;
+  margin: 22px auto 30px;
+}
+
+.images {
+  display: block;
+  width: 85%;
+  margin: 0 auto 29px;
+}
+
+.info {
+  background-color: rgb(239, 198, 70);
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 18px;
+  padding: 43px 0 28px;
+}
+
+.info p {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.info h4 {
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  width: 100%;
+  margin: 30px auto 0;
+  padding-bottom: 25px;
+}
+
+.sample {
+  display: block;
+  margin: 72px auto 47px;
+  width: 57%;
+}
+
+/* 一覧へ戻るボタン */
+.btn_back {
+  display: block;
+  text-align: center;
+  margin: 47px auto;
+  padding: 0.8em 1em;
+  width: 200px;
+  font-size: 18px;
+}
+
+.designcafe_wrap {
+  max-width: 100%;
 }
