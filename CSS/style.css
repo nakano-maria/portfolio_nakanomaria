@@ -518,7 +518,7 @@ h2.works_title2 {
 
 
 .top_button {
-  width: 120px;
+  width: 100px;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -596,17 +596,23 @@ h2.works_title2 {
   border-radius: 30px;
 }
 
-/* お問い合わせ内容入力欄サイズ */
-.box_con04 form ul li textarea {
-  height: 10em;
-}
-
 
 /* 項目タイトル */
 .box_con04 form ul li .title {
   position: relative;
   z-index: 1;
   background: rgb(65, 153, 171);
+}
+
+/* 必須 */
+.box_con04 form ul li .title span {
+  background: #cd6f55;
+  padding: 0 .3em;
+  color: #fff;
+  margin-left: .5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 入力欄 */
@@ -622,20 +628,18 @@ h2.works_title2 {
   box-sizing: border-box;
 }
 
-/* 必須 */
-.box_con04 form ul li .title span {
-  background: #cd6f55;
-  padding: 0 .3em;
-  color: #fff;
-  margin-left: .5em;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/* お問い合わせ内容入力欄サイズ */
+.box_con04 form ul li textarea .wide {
+  height: 10em;
 }
+
+.box_con04 form ul li textarea {
+  height: 10em;
+}
+
 
 /* 入力ボックス */
 .box_con04 form ul li .box_det {
-  width: 70%;
   background-color: #ffff;
   position: relative;
   -moz-box-sizing: border-box;
@@ -651,7 +655,7 @@ h2.works_title2 {
   display: block;
   text-align: center;
   margin: 67px auto 97px;
-  padding: 0.2em 1em;
+  padding: 0.5em 1em;
   width: 200px;
   color: #ffff;
   font-size: 23px;
