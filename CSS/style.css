@@ -20,8 +20,8 @@ dd {
   padding: 0;
   line-height: 1;
   color: rgb(65, 153, 171);
-  font-family: "FOT-筑紫A丸ゴシック Std B", "筑紫A丸ゴシック", "游ゴシック", "Hiragino Mincho ProN W3",
-    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+  font-family: "FOT-筑紫A丸ゴシック Std B", "筑紫A丸ゴシック Std B", "游ゴシック", "HG丸ゴシック M-PRO",
+    "ヒラギノ丸ゴ ProN", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
     "MS 明朝", serif;
   font-feature-settings: "palt";
 }
@@ -62,12 +62,10 @@ body {
 /* ヘッダー */
 .header-wrap {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .header_logo {
-  /* max-width: 100%; */
-  width: 15%;
+  width: 17%;
   margin-top: 22px;
   margin-left: 15px;
   margin-right: auto
@@ -507,9 +505,9 @@ h2.works_title2 {
   text-align: center;
   margin: 47px auto;
   padding: 0.6em 1em;
-  width: 240px;
+  width: 25%;
   color: #ffff;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   background-color: rgb(239, 93, 62);
   border-radius: 4vh;
