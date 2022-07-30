@@ -20,7 +20,7 @@ dd {
   padding: 0;
   line-height: 1;
   color: rgb(65, 153, 171);
-  font-family: "FOT-筑紫A丸ゴシック Std B", "筑紫A丸ゴシック", YuMincho, "Hiragino Mincho ProN W3",
+  font-family: "FOT-筑紫A丸ゴシック Std B", "筑紫A丸ゴシック", "游ゴシック", "Hiragino Mincho ProN W3",
     "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
     "MS 明朝", serif;
   font-feature-settings: "palt";
@@ -115,8 +115,7 @@ body {
 
 .title h1 {
   padding-top: 350px;
-  /* width: 670px; */
-  width: 49%;
+  width: 70%;
   margin: auto;
 }
 
@@ -528,12 +527,12 @@ h2.works_title2 {
 /* お問い合わせフォーム */
 
 .contactform_title {
-  width: 361px;
-  margin: 130px auto 40px;
+  width: 37%;
+  margin: 100px auto 40px;
 }
 
 .contactform h3 {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -554,7 +553,7 @@ h2.works_title2 {
 }
 
 .footer_wrap p {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   color: black;
   text-align: center;
@@ -566,7 +565,7 @@ h2.works_title2 {
 /* フォームデザイン */
 .box_con04 {
   max-width: 900px;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
 }
 
 
@@ -790,7 +789,7 @@ h2.works_title2 {
   }
 
   .title p {
-    font-size: 13px;
+    font-size: 15px;
     padding-bottom: 200px;
   }
 
@@ -1109,6 +1108,12 @@ h2.works_title2 {
   .top_button {
     width: 55px;
   }
+
+  /* フッターインスタアイコン */
+  .contact_wrap .insta_icon img {
+    width: 18px;
+  }
+
 
 
   /* designcafe.html */
