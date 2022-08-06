@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制作実績_PeoplegoodのHP</title>
+
+  <!-- slick読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header id="header">
+    <div class="header-wrap">
+      <h1 class="header_logo"><a href="../portfolio_nakanomaria/index.html"><img src="img/logo.png" alt="ヘッダーロゴ"></a>
+      </h1>
+
+
+      <!-- PCメニュー -->
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="../portfolio_nakanomaria/index.html#about">私について</a></li>
+          <li><a href="../portfolio_nakanomaria/index.html#concept">コンセプト</a></li>
+          <li><a href="../portfolio_nakanomaria/index.html#skill">できること</a></li>
+          <li><a href="../portfolio_nakanomaria/works.html">制作実績</a></li>
+          <li><a href="../portfolio_nakanomaria/contact.html">お問い合わせ</a></li>
+          <li><a href="https://www.instagram.com/nmk_0911/?hl=ja" target="_blank" rel="noopener noreferrer"><img
+                src="img/insta_icon.png"></a></li>
+        </ul>
+      </nav>
+
+      <div class="btn"><span></span></div>
+
+      <!-- SPハンバーガーメニュー -->
+      <nav class="sp_nav">
+        <ul>
+          <li><a href="../portfolio_nakanomaria/index.html#about">私について</a></li>
+          <li><a href="../portfolio_nakanomaria/index.html#concept">コンセプト</a></li>
+          <li><a href="../portfolio_nakanomaria/index.html#skill">できること</a></li>
+          <li><a href="../portfolio_nakanomaria/works.html">制作実績</a></li>
+          <li><a href="../portfolio_nakanomaria/contact.html">お問い合わせ</a></li>
+          <li><a href="https://www.instagram.com/nmk_0911/?hl=ja" target="_blank" rel="noopener noreferrer"><img
+                src="img/insta_icon.png"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="disigncafe">
+    <div class="designcafe_wrap">
+      <h2 class="works_title2"><img src="img/works_title.png"></h2>
+      <img src="img/mock_Peoplegood.png" class="images">
+      <div class="namisenn_top"></div>
+      <div class="designcafe_info">
+        <h3>DESIGN CAFE</h3>
+        <P>カテゴリー&emsp;／&emsp;HP</P>
+        <P>制作期間&emsp;&nbsp;&nbsp;／&emsp;1ヶ月</P>
+        <P>費用&emsp;／&emsp;50,000円〜</P>
+        <P>担当範囲&emsp;／&emsp;デザイン・コーディング</P>
+        <h4>Peoplegood様のHPを作成させていただきました。レスポンジブにも対応したサイトです。</h4>
+      </div>
+      <div class="namisenn_bottom"></div>
+
+      <img class="sample" src="img/PeoplegoodLP.png">
+
+
+
+      <!-- ボタン -->
+      <div class="btn_back">
+        <a href="../portfolio_nakanomaria/works.html">一覧へ戻る</a>
+      </div>
+
+  </section>
+
+  <!-- TOPボタン -->
+  <div class="top_button">
+    <a href="#"><img src="img/TOP_btn.png"></a>
+  </div>
+
+  <!-- お問合わせ -->
+  <section id="contact">
+    <div class="contact_wrap">
+      <h2 class="contact_title"><img src="img/contact.png"></h2>
+      <p>ご相談・ご質問ございましたらお気軽にお問い合わせください。</p>
+      <div class="contact_btn">
+        <a href="../portfolio_nakanomaria/contact.html">お問い合わせはこちら</a>
+      </div>
+      <div class="insta_icon"><a href="https://www.instagram.com/nmk_0911/?hl=ja" target="_blank"
+          rel="noopener noreferrer"><img src="img/insta_icon2.png"></a>
+        <div class="copyright">
+          <p>©2022 MARIA NAKANO</p>
+        </div>
+      </div>
+  </section>
+
+</body>
+
+<script>
+  $(function () {
+    $('.btn,sp_nav a ').click(function () {
+      $('.sp_nav').fadeToggle();
+      $('.btn').toggleClass('open');
+    });
+
+    $('.slider').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots: true,
+      arrows: false
+    });
+  });
+
+</script>
