@@ -877,13 +877,19 @@ h2.works_title2 {
 
   .skill_title img {
     padding-top: 0px;
+    padding-bottom: 30px;
     width: 42%;
   }
 
   .skill_list {
     display: block;
-    /* width: 80%; */
-    padding: 0 20px;
+    padding: 0px 0px;
+    margin: 0 30px;
+  }
+
+  .skill_list img {
+    width: 25%;
+    height: 25%;
   }
 
   .codeing_text p {
@@ -891,7 +897,7 @@ h2.works_title2 {
   }
 
   .skill_list h4 {
-    font-size: 4vw;
+    font-size: 3vw;
     padding-bottom: 15px;
     padding-left: 15px;
   }
@@ -903,9 +909,9 @@ h2.works_title2 {
   }
 
   .codeing {
-    width: 100%;
-    margin-right: 57px;
+    width: 95%;
     margin-bottom: 44px;
+    margin-right: 0px;
   }
 
   .codeing_text {
@@ -919,13 +925,13 @@ h2.works_title2 {
 
 
   .graphic {
-    width: 100%;
+    width: 95%;
     padding-bottom: 20px;
   }
 
 
   .webdesign {
-    width: 100%;
+    width: 95%;
     padding-bottom: 44px;
   }
 
@@ -943,7 +949,7 @@ h2.works_title2 {
   }
 
   .skill-info p {
-    padding: 23px 30px;
+    /* padding: 23px 30px; */
     font-size: 15px;
     line-height: 1.4;
     text-align: center;
