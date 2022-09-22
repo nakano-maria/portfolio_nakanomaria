@@ -418,8 +418,8 @@ h2.skill_title {
 /* TOPページ制作実績一覧 */
 .works_wrap {
   max-width: 1235px;
-  margin: 0 auto 130px;
-  padding: 100px 10px 0 10px;
+  margin: 200px auto 130px;
+  /* padding: 100px 10px 0 10px; */
 }
 
 h2.works_title {
@@ -465,8 +465,8 @@ h2.works_title {
 }
 
 .works_list li {
-  width: 45%;
-  margin-bottom: 145px;
+  width: 32%;
+  margin-bottom: 70px;
 }
 
 .works_list li p {
@@ -499,10 +499,6 @@ h2.works_title {
   padding-top: 65px;
 }
 
-.insta_icon {
-  text-align: center;
-  margin-top: 30px;
-}
 
 h2.contact_title {
   text-align: center;
@@ -516,7 +512,8 @@ h2.contact_title {
   font-size: 1.5vw;
   font-weight: bold;
   text-align: center;
-  padding: 30px 0;
+  padding-top: 45px;
+  padding-bottom: 50px;
   line-height: 1.25;
 }
 
@@ -527,11 +524,22 @@ h2.contact_title {
   margin: 0 auto;
   color: #ffff;
   font-size: 2vw;
-  padding: 0.8em 0.8em;
+  padding: 0.7em 0.8em;
   width: 22%;
   font-weight: bold;
   background-color: rgb(239, 93, 62);
   border-radius: 4vh;
+}
+
+.insta_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.insta_icon p {
+  margin-left: 5px;
 }
 
 
@@ -554,7 +562,7 @@ h2.works_title2 {
 
 .images {
   display: block;
-  width: 80%;
+  width: 60%;
   /*↑可変にする */
   margin: 0 auto 29px;
 }
@@ -581,7 +589,7 @@ h2.works_title2 {
   color: #155263;
   line-height: 1.8;
   letter-spacing: 0.07em;
-  width: 80%;
+  width: 40%;
   margin: 40px auto 0;
   padding-bottom: 64px;
 }
@@ -633,7 +641,7 @@ h2.works_title2 {
 }
 
 .contact_wrap .insta_icon img {
-  width: 30px;
+  width: 25px;
 }
 
 
@@ -1068,7 +1076,7 @@ h2.works_title2 {
   }
 
   .works_list li {
-    margin-bottom: 36px;
+    margin-bottom: 25px;
   }
 
   .works_list li p {
@@ -1257,7 +1265,7 @@ h2.works_title2 {
   .sample {
     display: block;
     margin: 72px auto 47px;
-    width: 57%;
+    width: 70%;
   }
 
   /* 一覧へ戻るボタン */
