@@ -593,12 +593,13 @@ dt.info_list {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.5;
-  color: #155263;
+  color: rgb(65, 153, 171);
   padding-bottom: 60px;
   width: 20%;
 }
 
 dd.info_text {
+  color: #155263;
   width: 80%;
   line-height: 1.5;
   padding-bottom: 60px;
